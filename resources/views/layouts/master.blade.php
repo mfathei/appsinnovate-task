@@ -10,10 +10,7 @@
         <div class="blog-header">
             <h1 class="blog-title">Appsinnovate News</h1>
             <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-            <div style="width: 100%;
-                 margin-bottom: 50px;">
-                <div class="btn btn-primary float-right">Add News</div>
-            </div>
+            
         </div>
         <div class="row">
 
@@ -36,7 +33,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="/summernote/dist/summernote.min.js"></script>
     @yield ('scripts')
 
 

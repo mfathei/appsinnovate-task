@@ -14,3 +14,5 @@
 Route::get('/', 'NewsController@index');
 
 Route::get('/news', 'NewsController@index');
+Route::get('/news/create', 'NewsController@create');
+Route::post('/news/create', 'NewsController@store');

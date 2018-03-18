@@ -13,6 +13,7 @@
 
         <!-- Bootstrap core CSS -->
         <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/summernote/dist/summernote.css" rel="stylesheet">
 
 
         <!-- Custom styles for this template -->

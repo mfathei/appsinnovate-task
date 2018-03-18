@@ -16,13 +16,12 @@
 
       <div class="row">
 
-        <div class="col-sm-8 blog-main">
+        <div class="col-sm-12 blog-main">
 
           @yield ('content')
 
         </div><!-- /.blog-main -->
           
-        @include ('layouts.partials.sidebar')
 
       </div><!-- /.row -->
 

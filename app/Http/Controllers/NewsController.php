@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\News;
+use Illuminate\Support\Facades\DB;
 
 class NewsController extends Controller
 {
@@ -13,7 +15,9 @@ class NewsController extends Controller
      */
     public function index()
     {
-        //
+        $news = News::latest()->get();
+        
+        return view('welcome', compact('news'));
     }
 
     /**

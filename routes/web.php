@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'NewsController@index');
+
+Route::get('/news', 'NewsController@index');

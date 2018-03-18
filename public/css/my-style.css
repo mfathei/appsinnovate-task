@@ -8,3 +8,12 @@
     margin-right: 10px;
     margin-left: 60px;
 }
+
+#hpage_cats .fl_left img{
+    width: 160px !important;
+    height: 160px !important;
+}
+
+#hpage_cats {
+    margin-bottom: 20px !important;
+}

@@ -1,22 +1,24 @@
 <div id="hpage_cats">
     <div class="fl_left">
-        <img src="/img/100x100.gif" alt="" />
-        <p><strong>
-                <a href="#">Indonectetus facilis leo.</a>
+        <img src="/img/{{ $post->photo }}" alt="" />
+        <p>
+            <strong>
+                <a href="#">{{ $post->title }}</a>
             </strong>
 
-            <a href="#" >
-                <span class="glyphicon glyphicon-trash float-right" title="remove">
-                </span>
+        <div class="pull-right">
+            <a href="/posts/edit/{{$post->id}}">
+                <i class="glyphicon glyphicon-edit " aria-hidden="true" title="Edit record"></i>
             </a>
-            <a href="#" >
-                <span class="glyphicon glyphicon-edit float-right" title="edit">
-                </span>
-            </a>
-
+            <a href="/posts/delete/{{$post->id}}">
+                <i class="glyphicon glyphicon-trash red " id="{{ $post->id }}" aria-hidden="true"
+                   title="Delete record"></i>
+            </a>  
+        </div>
         </p>
-
-        <p>This is a W3C standards compliant free website template from <a href="http://www.os-templates.com/">OS Templates</a>. For more CSS templates visit <a href="http://www.os-templates.com/">Free Website Templates</a>. Condimentumfelis et amet tellent quisquet a leo lacus nec augue accumsan sagittislaorem dolor sum at urna.</p>
+        <p class="blog-post-meta">By <a href="#">{{ $post->created_by }}</a> On {{ $post->created_at->toFormattedDateString() }} </p>
+        {{ \Illuminate\Support\Str::words($post->body, 35,'...') }}
+        <a href='/posts/{{ $post->id }}'>Read More</a>
 
     </div>
 </div>

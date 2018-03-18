@@ -1,0 +1,10 @@
+.float-right{
+    float: right !important;
+}
+
+.container-fluid {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 10px;
+    margin-left: 60px;
+}

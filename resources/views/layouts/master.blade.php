@@ -2,28 +2,29 @@
 
 @include ('layouts.header')
 
-  <body>
+<body>
 
-@include ('layouts.partials.nav')
+    @include ('layouts.partials.nav')
 
-    <div class="container">
+    <div class="container-fluid">
+        <div class="blog-header">
+            <h1 class="blog-title">Appsinnovate News</h1>
+            <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
+            <div style="width: 100%;
+                 margin-bottom: 50px;">
+                <div class="btn btn-primary float-right">Add News</div>
+            </div>
+        </div>
+        <div class="row">
 
-      <div class="blog-header">
-        <h1 class="blog-title">Appsinnovate News</h1>
-        <p class="lead blog-description">The official example template of creating a blog with Bootstrap.</p>
-        <div class="btn btn-primary">Add News</div>
-      </div>
+            <div class="col-sm-12 blog-main">
 
-      <div class="row">
+                @yield ('content')
 
-        <div class="col-sm-12 blog-main">
+            </div><!-- /.blog-main -->
 
-          @yield ('content')
 
-        </div><!-- /.blog-main -->
-          
-
-      </div><!-- /.row -->
+        </div><!-- /.row -->
 
     </div><!-- /.container -->
 
@@ -39,5 +40,5 @@
     @yield ('scripts')
 
 
-  </body>
+</body>
 </html>

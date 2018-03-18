@@ -2,8 +2,6 @@
 
 @section ('content')
 
-    @include ('news.new')
-
-
+    @include ('news.post')
 
 @endsection
